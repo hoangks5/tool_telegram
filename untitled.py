@@ -13,7 +13,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog, QApplication, QDialog
 import thread
 import os
-
+import ctypes
+ctypes.windll.user32.ShowWindow( ctypes.windll.kernel32.GetConsoleWindow(), 0 )
 
 class Ui_MainWindow(QDialog):
     def setupUi(self, MainWindow):
@@ -297,19 +298,49 @@ class Ui_MainWindow(QDialog):
         self.groupBox_2.setTitle(_translate("MainWindow", "Đăng Nhập"))
         self.label.setText(_translate("MainWindow", "Số nick cần chạy"))
         self.groupBox_3.setTitle(_translate("MainWindow", "Thay Đổi Tên"))
+        def change__name():
+                file_name_nb = [self.lineEdit_3.text(),self.lineEdit.text(),self.lineEdit_4.text()]
+                thread.change__name(file_name_nb)
+        def doiten():
+                x = threading.Thread(target=change__name)
+                x.start()
+        self.pushButton_5.clicked.connect(doiten)
         self.pushButton_5.setText(_translate("MainWindow", "Run"))
         self.lineEdit_4.setPlaceholderText(_translate("MainWindow", "Tên muốn thay đổi"))
         self.groupBox_4.setTitle(_translate("MainWindow", "Auto Chat"))
+
+        def chat():
+                file_name_nb = [self.lineEdit_3.text(),self.textEdit.toPlainText(),self.textEdit_2.toPlainText(),self.lineEdit_5.text()]
+                thread.chat_ok(file_name_nb)
+        def chat_1():
+                x = threading.Thread(target=chat)
+                x.start()
+        self.pushButton_6.clicked.connect(chat_1)
         self.pushButton_6.setText(_translate("MainWindow", "Run"))
         self.textEdit.setPlaceholderText(_translate("MainWindow", "Link nhóm cách nhau bởi dấu ;"))
         self.textEdit_2.setPlaceholderText(_translate("MainWindow", "Nội dung chat cách nhau bằng dấu |"))
         self.lineEdit_5.setPlaceholderText(_translate("MainWindow", "5,10s"))
         self.label_2.setText(_translate("MainWindow", "TIMER"))
+
+        def jonn__gr1():
+                file_name_nb = [self.lineEdit_3.text(),self.textEdit.toPlainText()]
+                thread.join_gr(file_name_nb)
+        def jonr1():
+                x = threading.Thread(target=jonn__gr1)
+                x.start()
+        self.pushButton_7.clicked.connect(jonr1)
         self.pushButton_7.setText(_translate("MainWindow", "Join"))
         self.label_4.setText(_translate("MainWindow", "Tự động tham"))
         self.label_5.setText(_translate("MainWindow", "gia nhóm"))
         self.label_3.setText(_translate("MainWindow", "Hỗ Trợ Code: Hoàng 0358259167"))
         self.label_6.setText(_translate("MainWindow", "Auto Telegram"))
+        def dung():
+                os.system("taskkill /f /im chrome.exe")
+                os.system("taskkill /f /im ._cache_chromedriver.exe")
+        def kill():
+                x = threading.Thread(target=dung)
+                x.start()
+        self.pushButton_8.clicked.connect(dung)
         self.pushButton_8.setText(_translate("MainWindow", "STOP"))
 
 
