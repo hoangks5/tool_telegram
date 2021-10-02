@@ -1,0 +1,3 @@
+B1 : Cài đặt file "python-3.9.7-amd64.exe" ở thư mục "lib"
+B2: Cài đặt file "caidat.bat" ở thư mục "lib" để cài đặt các thư viện
+B3: Mở tools bằng file "setup.bat"
