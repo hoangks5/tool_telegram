@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>516</width>
-    <height>896</height>
+    <width>537</width>
+    <height>643</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Auto Telegram By Nguyễn Hoàng</string>
+   <string>Auto Bot Telegram</string>
   </property>
   <property name="windowIcon">
    <iconset>
@@ -23,402 +23,127 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>531</width>
-      <height>871</height>
+      <width>671</width>
+      <height>701</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: qlineargradient(spread:pad, x1:0.063, y1:0.0735455, x2:1, y2:1, stop:0 rgba(0, 72, 126, 255), stop:1 rgba(188, 204, 252, 255));</string>
-    </property>
-    <widget class="QGroupBox" name="groupBox">
+    <widget class="QFrame" name="frame">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>180</y>
-       <width>451</width>
-       <height>121</height>
+       <x>-10</x>
+       <y>-10</y>
+       <width>801</width>
+       <height>691</height>
       </rect>
      </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(0, 85, 255);
-background-color: rgb(255, 255, 255,0);
-background-color: rgb(0, 255, 127);</string>
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0.063, y1:0.0735455, x2:1, y2:1, stop:0 rgba(0, 72, 126, 255), stop:1 rgba(188, 204, 252, 255));</string>
      </property>
-     <property name="title">
-      <string>Thay Đổi Avatar</string>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
      </property>
-     <widget class="QPushButton" name="pushButton_4">
-      <property name="geometry">
-       <rect>
-        <x>340</x>
-        <y>50</y>
-        <width>91</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>OCR A Extended</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-radius: 5px;
-background-color: rgb(255, 20, 82);
-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string>Run</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>50</y>
-        <width>201</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="readOnly">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton">
-      <property name="geometry">
-       <rect>
-        <x>240</x>
-        <y>50</y>
-        <width>91</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>OCR A Extended</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-radius: 5px;
-color: rgb(0, 85, 127);
-background-color: rgb(0, 170, 127);</string>
-      </property>
-      <property name="text">
-       <string>Browse</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="groupBox_2">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>40</y>
-       <width>311</width>
-       <height>111</height>
-      </rect>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
      </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255,0);
-color: rgb(0, 85, 255);
-background-color: rgb(0, 255, 127);</string>
-     </property>
-     <property name="title">
-      <string>Đăng Nhập</string>
-     </property>
-     <widget class="QLineEdit" name="lineEdit_3">
-      <property name="geometry">
-       <rect>
-        <x>250</x>
-        <y>50</y>
-        <width>41</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>15</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
-        <y>20</y>
-        <width>211</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>18</pointsize>
-        <weight>75</weight>
-        <italic>false</italic>
-        <bold>true</bold>
-        <underline>false</underline>
-        <strikeout>false</strikeout>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string>Số nick cần chạy</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="groupBox_3">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>350</y>
-       <width>451</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255,0);
-background-color: rgb(0, 255, 127);
-color: rgb(0, 85, 255);</string>
-     </property>
-     <property name="title">
-      <string>Thay Đổi Tên</string>
-     </property>
-     <widget class="QPushButton" name="pushButton_5">
-      <property name="geometry">
-       <rect>
-        <x>340</x>
-        <y>50</y>
-        <width>91</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>OCR A Extended</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-radius: 5px;
-color: rgb(255, 255, 255);
-background-color: rgb(255, 20, 82);</string>
-      </property>
-      <property name="text">
-       <string>Run</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit_4">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>50</y>
-        <width>291</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>15</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="placeholderText">
-       <string>Tên muốn thay đổi</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="groupBox_4">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>520</y>
-       <width>451</width>
-       <height>301</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255,0);
-background-color: rgb(0, 255, 127);
-color: rgb(85, 85, 255);</string>
-     </property>
-     <property name="title">
-      <string>Auto Chat</string>
-     </property>
-     <widget class="QPushButton" name="pushButton_6">
-      <property name="geometry">
-       <rect>
-        <x>330</x>
-        <y>250</y>
-        <width>91</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>OCR A Extended</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-radius: 5px;
-color: rgb(255, 255, 255);
-background-color: rgb(255, 20, 82);</string>
-      </property>
-      <property name="text">
-       <string>Run</string>
-      </property>
-     </widget>
      <widget class="QTextEdit" name="textEdit">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>40</y>
-        <width>281</width>
+        <x>60</x>
+        <y>30</y>
+        <width>201</width>
         <height>81</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
+border-radius: 10px;</string>
       </property>
       <property name="placeholderText">
-       <string>Link nhóm cách nhau bởi dấu ;</string>
+       <string>Link group (t.me/xxx) cách nhau bởi dấu ;</string>
       </property>
      </widget>
      <widget class="QTextEdit" name="textEdit_2">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>150</y>
-        <width>281</width>
-        <height>131</height>
+        <x>60</x>
+        <y>140</y>
+        <width>201</width>
+        <height>81</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
+border-radius: 10px;</string>
       </property>
       <property name="placeholderText">
-       <string>Nội dung chat cách nhau bằng dấu |</string>
+       <string>Nội dung chat đầu tiên cách nhau bởi dấu ;</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_5">
+     <widget class="QLineEdit" name="lineEdit">
       <property name="geometry">
        <rect>
-        <x>350</x>
-        <y>200</y>
-        <width>51</width>
+        <x>290</x>
+        <y>140</y>
+        <width>201</width>
         <height>31</height>
        </rect>
       </property>
-      <property name="font">
-       <font>
-        <pointsize>15</pointsize>
-       </font>
-      </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 5px;</string>
       </property>
       <property name="placeholderText">
-       <string>5,10s</string>
+       <string>Thời gian chat cách nhau giữa các acc</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_2">
+     <widget class="QLineEdit" name="lineEdit_2">
       <property name="geometry">
        <rect>
-        <x>340</x>
-        <y>170</y>
-        <width>81</width>
-        <height>21</height>
+        <x>290</x>
+        <y>190</y>
+        <width>201</width>
+        <height>31</height>
        </rect>
       </property>
-      <property name="font">
-       <font>
-        <pointsize>15</pointsize>
-        <weight>75</weight>
-        <italic>false</italic>
-        <bold>true</bold>
-        <underline>false</underline>
-        <strikeout>false</strikeout>
-       </font>
-      </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(255, 255, 255);</string>
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 5px;</string>
       </property>
       <property name="text">
-       <string>TIMER</string>
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Thời gian chờ rồi sửa tin nhắn, profile</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_7">
+     <widget class="QTextEdit" name="textEdit_3">
       <property name="geometry">
        <rect>
-        <x>330</x>
-        <y>90</y>
+        <x>290</x>
+        <y>30</y>
+        <width>201</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Nội dung chat muốn chỉnh sửa</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>260</y>
         <width>91</width>
-        <height>31</height>
+        <height>41</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>OCR A Extended</family>
         <pointsize>12</pointsize>
         <weight>75</weight>
         <bold>true</bold>
@@ -428,150 +153,265 @@ color: rgb(0, 0, 0);</string>
        <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-radius: 5px;
-color: rgb(170, 0, 0);
-background-color: rgb(255, 255, 0);</string>
-      </property>
-      <property name="text">
-       <string>Join</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_4">
-      <property name="geometry">
-       <rect>
-        <x>330</x>
-        <y>20</y>
-        <width>91</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-        <weight>75</weight>
-        <italic>false</italic>
-        <bold>true</bold>
-        <underline>false</underline>
-        <strikeout>false</strikeout>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string>Tự động tham</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_5">
-      <property name="geometry">
-       <rect>
-        <x>350</x>
-        <y>40</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-        <weight>75</weight>
-        <italic>false</italic>
-        <bold>true</bold>
-        <underline>false</underline>
-        <strikeout>false</strikeout>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(255, 255, 255,0);</string>
-      </property>
-      <property name="text">
-       <string>gia nhóm</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>820</y>
-       <width>361</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>15</pointsize>
-       <weight>75</weight>
-       <italic>false</italic>
-       <bold>true</bold>
-       <underline>false</underline>
-       <strikeout>false</strikeout>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255,0);
-color: rgb(170, 0, 0);</string>
-     </property>
-     <property name="text">
-      <string>Hỗ Trợ Code: Hoàng 0358259167</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_6">
-     <property name="geometry">
-      <rect>
-       <x>360</x>
-       <y>40</y>
-       <width>121</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(0, 0, 255);
-border-radius: 10px;
-color: rgb(255, 255, 0);</string>
-     </property>
-     <property name="text">
-      <string>Auto Telegram</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_8">
-     <property name="geometry">
-      <rect>
-       <x>370</x>
-       <y>120</y>
-       <width>101</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>OCR A Extended</family>
-       <pointsize>18</pointsize>
-       <weight>75</weight>
-       <italic>false</italic>
-       <bold>true</bold>
-       <underline>false</underline>
-      </font>
-     </property>
-     <property name="cursor">
-      <cursorShape>PointingHandCursor</cursorShape>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border-radius: 5px;
-background-color: rgb(255, 20, 82);
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.00568182, stop:0 rgba(108, 255, 131, 255), stop:0.568182 rgba(0, 255, 72, 255), stop:1 rgba(88, 209, 121, 255));
+background-color: rgb(170, 85, 0);
+border-radius: 5px;
 color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="text">
-      <string>STOP</string>
-     </property>
+      </property>
+      <property name="text">
+       <string>Stop</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>600</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Old English Text MT</family>
+        <pointsize>15</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255,0);
+color: rgb(255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Code:  0358259167</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>380</y>
+        <width>251</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <stylestrategy>PreferDefault</stylestrategy>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>ForbiddenCursor</cursorShape>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0.063, y1:0.0735455, x2:1, y2:1, stop:0 rgba(255, 238, 3, 255), stop:1 rgba(216, 51, 252, 255));
+border-radius: 5px;
+color: rgb(170, 0, 0);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Thông báo tiến trình</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>450</y>
+        <width>251</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <stylestrategy>PreferDefault</stylestrategy>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>ForbiddenCursor</cursorShape>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0.063, y1:0.0735455, x2:1, y2:1, stop:0 rgba(255, 238, 3, 255), stop:1 rgba(216, 51, 252, 255));
+border-radius: 5px;
+color: rgb(170, 0, 0);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Thông báo tiến trình</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>260</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.00568182, stop:0 rgba(108, 255, 131, 255), stop:0.568182 rgba(0, 255, 72, 255), stop:1 rgba(88, 209, 121, 255));
+border-radius: 5px;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>520</y>
+        <width>251</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <stylestrategy>PreferDefault</stylestrategy>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>ForbiddenCursor</cursorShape>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0.063, y1:0.0735455, x2:1, y2:1, stop:0 rgba(255, 238, 3, 255), stop:1 rgba(216, 51, 252, 255));
+border-radius: 5px;
+color: rgb(170, 0, 0);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Thông báo tiến trình</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>260</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.00568182, stop:0 rgba(108, 255, 131, 255), stop:0.568182 rgba(0, 255, 72, 255), stop:1 rgba(88, 209, 121, 255));
+background-color: rgb(255, 85, 255);
+border-radius: 5px;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Add Nick</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
@@ -580,7 +420,7 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>516</width>
+     <width>537</width>
      <height>21</height>
     </rect>
    </property>
